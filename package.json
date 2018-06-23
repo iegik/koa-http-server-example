@@ -33,7 +33,7 @@
   "scripts": {
     "start": "node app",
     "dev": "NODE_ENV=development nodemon --quiet | bunyan",
-    "test": "NODE_ENV=test jest --forceExit --verbose",
+    "test": "NODE_ENV=test npx jest --forceExit --verbose",
     "test:unit": "npm test -- test/unit",
     "test:integration": "npm test -- test/integration",
     "test:watch": "npm test -- --watch",
@@ -49,12 +49,13 @@
   "dependencies": {
     "bunyan": "^1.8.12",
     "dotenv": "^5.0.1",
+    "dtrace-provider": "^0.8.7",
     "elastic-apm-node": "^1.2.1",
     "kcors": "^2.2.1",
     "koa": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.4.0",
-    "mysql": "^2.15.0",
+    "mysql2-promise": "^0.1.4",
     "swagger-jsdoc": "^1.9.7",
     "uuid": "^3.2.1"
   },

@@ -17,7 +17,7 @@ describe('Books', () => {
       const { status, data } = res.body;
       const expected = ['id', 'title', 'date', 'author', 'description', 'image'];
       expect(status).toBe('success');
-      expect(Object.keys(data)).toEqual(expect.arrayContaining(expected));
+      expect(Object.keys(data[0])).toEqual(expect.arrayContaining(expected));
     });
   });
 });
