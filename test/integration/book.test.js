@@ -4,13 +4,13 @@ const supertest = require('supertest');
 const app = require('../../app');
 
 
-describe('Books', () => {
+describe('Book', () => {
   const request = supertest(app.listen());
 
-  describe('GET /books', () => {
+  describe('GET /book', () => {
     it('<200> should return info from db', async () => {
       const res = await request
-        .get('/books')
+        .get('/book')
         .expect('Content-Type', /json/)
         .expect(200);
 

@@ -190,3 +190,7 @@ tags
 .vscode/
 tsconfig.json
 jsconfig.json
+
+.config
+.ash_history
+.mysql/data

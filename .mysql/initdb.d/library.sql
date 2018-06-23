@@ -24,13 +24,13 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/ `library` /*!40100 DEFAULT CHARACTER SE
 USE `library`;
 
 --
--- Table structure for table `books`
+-- Table structure for table `book`
 --
 
-DROP TABLE IF EXISTS `books`;
+DROP TABLE IF EXISTS `book`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `books` (
+CREATE TABLE `book` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(128) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -41,6 +41,6 @@ CREATE TABLE `books` (
 ) ENGINE=InnoDB AUTO_INCREMENT=231 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
-/*!40000 ALTER TABLE `books` DISABLE KEYS */;
-INSERT INTO `books` VALUES (1,'It`s My Life', '2016-04-14 16:39:59', 'Arturs Jansons', 'Spending hours on computer\r\n...writing code', 'artursjansons');
-/*!40000 ALTER TABLE `books` ENABLE KEYS */;
+/*!40000 ALTER TABLE `book` DISABLE KEYS */;
+INSERT INTO `book` VALUES (1,'It`s My Life', '2016-04-14 16:39:59', 'Arturs Jansons', 'Spending hours on computer\r\n...writing code', 'artursjansons');
+/*!40000 ALTER TABLE `book` ENABLE KEYS */;

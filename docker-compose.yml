@@ -1,0 +1,27 @@
+version: '3'
+services:
+
+  httpd:
+    ports:
+    - $PORT:7070
+    env_file:
+    - .env
+    volumes:
+    - .:/root
+    - $HOME/.node-cache:/tmp
+    - ./.mysql/mysqld:/var/run/mysqld
+    depends_on:
+    - db
+    command: npm run start
+    image: iegik/docker-node
+
+  db:
+    env_file:
+    - .env
+    volumes:
+    - ./.mysql/conf.d:/etc/mysql/conf.d
+    - ./.mysql/initdb.d:/docker-entrypoint-initdb.d
+    - ./.mysql/data:/var/lib/mysql
+    - ./.mysql/mysqld:/var/run/mysqld
+    working_dir: /var/lib/mysql
+    image: mysql:5.7.22

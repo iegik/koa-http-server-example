@@ -27,7 +27,7 @@
     "skeleton"
   ],
   "engines": {
-    "node": ">= 7.0.0"
+    "node": ">= 7.0.0 <= 8.17.0"
   },
   "main": "app",
   "scripts": {
@@ -47,25 +47,26 @@
     "lint:test": "eslint test"
   },
   "dependencies": {
-    "bunyan": "^1.8.12",
+    "bunyan": "^2.0.2",
     "dotenv": "^5.0.1",
-    "dtrace-provider": "^0.8.7",
-    "elastic-apm-node": "^1.2.1",
+    "dtrace-provider": "0.8.5",
+    "elastic-apm-node": "^3.3.0",
     "kcors": "^2.2.1",
     "koa": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.4.0",
     "mysql2-promise": "^0.1.4",
     "swagger-jsdoc": "^1.9.7",
-    "uuid": "^3.2.1"
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.9",
     "eslint": "^4.19.1",
     "eslint-config-omnious": "^0.4.0",
     "jest": "^22.4.3",
     "jest-junit": "^4.0.0",
-    "nodemon": "^1.17.2",
+    "node-pre-gyp": "^0.14.0",
+    "nodemon": "^2.0.2",
     "supertest": "^3.0.0"
   },
   "jest": {
