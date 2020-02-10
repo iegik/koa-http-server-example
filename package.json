@@ -27,7 +27,7 @@
     "skeleton"
   ],
   "engines": {
-    "node": ">= 7.0.0 <= 8.17.0"
+    "node": ">= 7.0.0"
   },
   "main": "app",
   "scripts": {
@@ -56,6 +56,7 @@
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.4.0",
     "mysql2-promise": "^0.1.4",
+    "node-gyp": "^6.1.0",
     "swagger-jsdoc": "^1.9.7",
     "uuid": "^3.4.0"
   },
